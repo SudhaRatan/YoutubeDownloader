@@ -17,7 +17,7 @@ def download():
     video_obj = YouTube(video_url)
     stream = video_obj.streams.get_highest_resolution( )
     stream.download(path)
-    label1 = Label(root,text='Download completed :)').grid(row=2,column=0) 
+    label1 = Label(root,text='Download completed !').grid(row=2,column=0) 
     
 label1 = Label(root,text='Paste url here').grid(row=0,column=0)   
 button1 = Button(root,text = 'Start download',command=download,padx=5,fg='black',bg='cyan')
